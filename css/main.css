@@ -13,8 +13,8 @@ body {
 .main-header__logo {
   background: white;
   position: absolute;
-  top: 4em;
-  padding: 10px 30px;
+  top: 2em;
+  padding: 10px 35px;
 }
 
 .main-header__banner img {
