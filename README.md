@@ -17,8 +17,8 @@ Develop a HTML standards compliant, responsive landing page implementing CSS Med
 
 * body: 14px, Arial
 * nav: 13px (font-size)
-* main header: <h1> 28px (font-size)
-* profile sub headers: <h3> 16px (font-size)
+* main header: 28px (font-size)
+* profile sub headers: 16px (font-size)
 * profile text & text links: inherited from body
 * form labels: 11px (font-size)
 * footer: 12px (font-size
@@ -34,14 +34,14 @@ Develop a HTML standards compliant, responsive landing page implementing CSS Med
 Images are listed per device (located in the images directory of the root folder)
 
 * Desktop:
- * banner_large.jpg
- * cta_arrow.png
- * logo_large.png
- * mobile_link_arrow.png
- * profile_1.jpg
- * profile_2.jpg
+   *  banner_large.jpg
+   *  cta_arrow.png
+   *  logo_large.png
+   *  mobile_link_arrow.png
+   *  profile_1.jpg
+   *  profile_2.jpg
 
-* Tablet:
+Tablet:
  * banner_medium.jpg
  * cta_arrow.png
  * logo_medium.png
