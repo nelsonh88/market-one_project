@@ -41,21 +41,21 @@ Images are listed per device (located in the images directory of the root folder
    *  profile_1.jpg
    *  profile_2.jpg
 
-Tablet:
- * banner_medium.jpg
- * cta_arrow.png
- * logo_medium.png
- * mobile_link_arrow.png
- * profile_1.jpg
- * profile_2.jpg
+* Tablet:
+   *  banner_medium.jpg
+   *  cta_arrow.png
+   *  logo_medium.png
+   *  mobile_link_arrow.png
+   *  profile_1.jpg
+   *  profile_2.jpg
 
 * Mobile:
- * banner_small.jpg
- * cta_arrow.png
- * logo_small.png
- * mobile_link_arrow.png
- * profile_1.jpg
- * profile_2.jpg
+   *  banner_small.jpg
+   *  cta_arrow.png
+   *  logo_small.png
+   *  mobile_link_arrow.png
+   *  profile_1.jpg
+   *  profile_2.jpg
 
 ### Some Lipsum to copy
 
