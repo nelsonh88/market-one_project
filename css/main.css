@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.main-header {
+  position: relative;
+}
+
+.main-header__logo {
+  background: white;
+  position: absolute;
+  top: 4em;
+  padding: 10px 30px;
+}
+
+.main-header__banner img {
+  width: 100%
+}
