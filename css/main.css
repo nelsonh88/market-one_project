@@ -18,5 +18,32 @@ body {
 }
 
 .main-header__banner img {
-  width: 100%
+  width: 100%;
+  display: block;
+}
+
+.main-header nav ul {
+  display: flex;
+  flex-direction: row;
+  background: #00A1D3;
+  margin-top: 0;
+  padding: 0.8em 0 .8em 2em;
+}
+
+.main-header nav li {
+  margin-right: 1em;
+  padding: 0;
+  list-style: none;
+}
+
+.main-header nav li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+body {
+  font-size: 14px;
+  font-family: arial;
 }
