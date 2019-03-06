@@ -47,3 +47,9 @@ body {
   font-size: 14px;
   font-family: arial;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-column-gap: 20px;
+}
