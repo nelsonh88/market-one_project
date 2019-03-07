@@ -52,7 +52,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 55% 45%;
-  grid-column-gap: 20px;
+  grid-column-gap: 30px;
   margin: 20px;
 }
 
@@ -64,4 +64,21 @@ body {
 
 .hero p > a {
   color: #00A1D3;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.details__profiles {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+.details__profiles-info h2 {
+  margin: 0;
+}
+
+.details__profiles-info p {
+  margin-top: 0;
 }
