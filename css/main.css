@@ -5,6 +5,8 @@
 body {
   margin: 0;
   color: #333333;
+  font-size: 14px;
+  font-family: arial;
 }
 
 .main-header {
@@ -77,8 +79,28 @@ body {
 
 .details__profiles-info h2 {
   margin: 0;
+  font-size: 16px;
+}
+
+.details__profiles-info {
+  margin-left: 5px;
 }
 
 .details__profiles-info p {
   margin-top: 0;
+}
+
+.details__profiles-info a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #00A1D3;
+}
+
+.details__profiles-info a::after {
+  background-image: url(../assets/images/cta_arrow.png);
+  content: " ";
+  display: inline-block;
+  width: 7px;
+  height: 10.25px;
+  margin: auto auto auto 10px;
 }
