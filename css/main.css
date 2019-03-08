@@ -26,11 +26,15 @@ body {
 }
 
 .main-header nav ul {
+  padding: 0.8em 0 .8em 2em;
+}
+
+.main-header nav ul,
+footer {
   display: flex;
   flex-direction: row;
   background: #00A1D3;
   margin: 0;
-  padding: 0.8em 0 .8em 2em;
 }
 
 .main-header nav li {
@@ -77,6 +81,10 @@ body {
   grid-template-columns: 20% 1fr;
 }
 
+.details__profiles:last-child {
+    margin-left: 30px;
+}
+
 .details__profiles-info h2 {
   margin: 0;
   font-size: 16px;
@@ -103,4 +111,40 @@ body {
   width: 7px;
   height: 10.25px;
   margin: auto auto auto 10px;
+}
+
+form p, label {
+  margin: 0;
+  font-size: 11px;
+}
+
+form p::after, label::after {
+  content: "*"
+}
+
+input[type=text], select {
+  width: 60%;
+  padding: 8px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  height: 30px;
+}
+
+button {
+    width: 25%;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 4px;
+    background: #00A1D3;
+    color: #ffffff;
+}
+
+footer {
+  padding: 0 2em;
+  color: #ffffff;
 }
