@@ -61,7 +61,7 @@
       </div>
       <div class="grid-item">
         <aside>
-          <form>
+          <form name="userForm">
             <p>First Name</p>
             <input type="text" name="firstname">
             <p>Last Name</p>
@@ -69,11 +69,11 @@
             <p>Title</p>
             <input type="text" name="title">
             <p>Email Address</p>
-            <input type="text" name="Email Address">
+            <input type="text" name="email">
             <p>Phone</p>
-            <input type="text" name="Phone">
-            <label for="already-a-client">Already A Client</label>
-            <select name="already-a-client">
+            <input type="text" name="phone">
+            <label for="already-a-client">Already A Client?</label>
+            <select name="alreadyaclient">
               <option value="" disabled selected>--Please Select--</option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
@@ -85,7 +85,7 @@
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
               </select> -->
-            <button type="submit" value="Contact Us">Contact Us</button>
+            <button type="button" onclick="validation()" value="Contact Us">Contact Us</button>
           </form>
         </aside>
       </div>
