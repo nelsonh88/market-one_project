@@ -2,8 +2,13 @@
 
 console.log("aiiyo")
 
+const resetInputFields = function () {
+  var frm = document.getElementsByName('userForm')[0];
+  frm.reset();
+}
+
 const validation = function() {
-  let str = document.userForm.email.value
+  // let str = document.userForm.email.value
 
   if (document.userForm.firstname.value == "") {
     alert("Please provide your first name!");
@@ -47,6 +52,8 @@ const validation = function() {
     document.userForm.alreadyaclient.focus();
     return false;
   }
+
   alert("Form submitted successfully");
+  resetInputFields()
   return (true);
 }
