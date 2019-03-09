@@ -10,13 +10,15 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <div class="main-header__logo">
-      <img src="./assets/images/logo_large.png" alt="MarketOne Logo">
-    </div>
-    <div class="main-header__banner">
-      <img src="./assets/images/banner_large.jpg" alt="MarketOne Banner">
-    </div>
+  <div class="page-content">
+    <header class="main-header">
+      <div class="main-header__logo">
+        <!-- <img src="./assets/images/logo_large.png" alt="MarketOne Logo"> -->
+      </div>
+      <!-- <div class="main-header__banner">
+        <img src="./assets/images/banner_large.jpg" alt="MarketOne Banner">
+      </div> -->
+    </header>
     <nav>
       <ul>
         <li><a href="javaScript:void(0)">About Us</a></li>
@@ -25,76 +27,76 @@
         <li><a href="javaScript:void(0)">Contact Us</a></li>
       </ul>
     </nav>
-  </header>
 
-  <div class="wrapper">
-    <div class="grid-container">
-      <div class="grid-item">
-        <section class="hero">
-          <h1>Welcome</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="javaScript:void(0)">Duis aute
+    <div class="wrapper">
+      <div class="flex-container">
+        <div class="flex-item tablet-column-left">
+          <section class="hero">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="javaScript:void(0)">Duis aute
             irure</a> dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
-        <section class="details">
-          <div class="flex-container">
-            <div class="details__profiles">
-              <img src="./assets/images/profile_1.jpg" alt="Image of Profile One">
-              <div class="details__profiles-info">
-                <h2>Profile Name Here</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="javaScript:void(0)">Read More</a>
+          </section>
+          <section class="details">
+            <div class="flex-container">
+              <div class="details__profiles">
+                <img src="./assets/images/profile_1.jpg" alt="Image of Profile One">
+                <div class="details__profiles-info">
+                  <h2>Profile Name Here</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <a href="javaScript:void(0)">Read More</a>
+                </div>
               </div>
-            </div>
 
-            <div class="details__profiles">
-              <img src="./assets/images/profile_2.jpg" alt="Image of Profile Two">
-              <div class="details__profiles-info">
-                <h2>Profile Name Here</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="javaScript:void(0)">Learn More</a>
+              <div class="details__profiles">
+                <img src="./assets/images/profile_2.jpg" alt="Image of Profile Two">
+                <div class="details__profiles-info">
+                  <h2>Profile Name Here</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <a href="javaScript:void(0)">Learn More</a>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-      </div>
-      <div class="grid-item">
-        <aside>
-          <form name="userForm">
-            <p>First Name</p>
-            <input type="text" name="firstname">
-            <p>Last Name</p>
-            <input type="text" name="lastname">
-            <p>Title</p>
-            <input type="text" name="title">
-            <p>Email Address</p>
-            <input type="text" name="email">
-            <p>Phone</p>
-            <input type="text" name="phone">
-            <label for="already-a-client">Already A Client?</label>
-            <select name="alreadyaclient">
+          </section>
+        </div>
+        <div class="flex-item tablet-column-right">
+          <aside>
+            <form name="userForm">
+              <p>First Name</p>
+              <input type="text" name="firstname">
+              <p>Last Name</p>
+              <input type="text" name="lastname">
+              <p>Title</p>
+              <input type="text" name="title">
+              <p>Email Address</p>
+              <input type="text" name="email">
+              <p>Phone</p>
+              <input type="text" name="phone">
+              <label for="already-a-client">Already A Client?</label>
+              <select name="alreadyaclient">
               <option value="" disabled selected>--Please Select--</option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
             </select>
-            <!-- <p>Already A Client</p>
+              <!-- <p>Already A Client</p>
             <input type="text" name="Already A Client?"> -->
-            <!-- <select>
+              <!-- <select>
                 <option value="" disabled selected>Please Select</option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
               </select> -->
-            <button type="button" onclick="validation()" value="Contact Us">Contact Us</button>
-          </form>
-        </aside>
+              <button type="button" onclick="validation()" value="Contact Us">Contact Us</button>
+            </form>
+          </aside>
+        </div>
       </div>
     </div>
-  </div>
 
-  <footer>
-    <p>Copyright © 2013 MarketOne International. All Rights Reserved.</p>
-  </footer>
+    <footer>
+      <p>Copyright © 2013 MarketOne International. All Rights Reserved.</p>
+    </footer>
+  </div>
 
   <script src="./js/main.js"></script>
 </body>
