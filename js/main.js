@@ -8,7 +8,7 @@ const resetInputFields = function () {
   frm.reset();
 }
 
-let hasErrors = false
+let hasErrors = true
 
 /*
 const validation = function() {
@@ -67,15 +67,14 @@ const validation = function() {
 const validation = function(e) {
   const target = e.target;
   const errmsg = target.parentNode.getElementsByClassName('errormessage');
-
   if (target.value.length === 0) {
     target.classList.add('error');
       target.parentNode.classList.add('error');
       errmsg[0].style.display = 'block';
-      return hasErrors = true
     } else {
 	    errmsg[0].style.display = 'none';
     	target.parentNode.classList.remove('error');
+      return hasErrors = false
     }
   }
 
@@ -83,13 +82,13 @@ const validation = function(e) {
     const target = e.target;
     const errmsg = target.parentNode.getElementsByClassName('errormessage');
     if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(userForm.email.value)) {
-      target.classList.add('error');
+          target.classList.add('error');
         target.parentNode.classList.add('error');
         errmsg[0].style.display = 'block';
-        return hasErrors = true
       } else {
   	    errmsg[0].style.display = 'none';
       	target.parentNode.classList.remove('error');
+        return hasErrors = false
       }
   }
 
@@ -98,13 +97,13 @@ const validation = function(e) {
     const errmsg = target.parentNode.getElementsByClassName('errormessage');
     if (document.userForm.phone.value == "" || isNaN(document.userForm.phone.value) ||
       document.userForm.phone.value.length != 10) {
-      target.classList.add('error');
+            target.classList.add('error');
         target.parentNode.classList.add('error');
         errmsg[0].style.display = 'block';
-        return hasErrors = true
       } else {
         errmsg[0].style.display = 'none';
         target.parentNode.classList.remove('error');
+        return hasErrors = false
       }
   }
 
@@ -112,13 +111,13 @@ const validation = function(e) {
     const target = e.target;
     const errmsg = target.parentNode.getElementsByClassName('errormessage');
     if (document.userForm.alreadyaclient.value == "") {
-      target.classList.add('error');
+          target.classList.add('error');
         target.parentNode.classList.add('error');
         errmsg[0].style.display = 'block';
-        return hasErrors = true
       } else {
         errmsg[0].style.display = 'none';
         target.parentNode.classList.remove('error');
+        return hasErrors = false
       }
   }
 
@@ -127,18 +126,35 @@ const validation = function(e) {
 //     let formFields = document.querySelectorAll('.formgroup');
 //     for (let i=0; i<formFields.length; i++) {
 //   	if (formFields[i].classList.contains('error')) {
-//       hasErrors = true;
 //       break;
 //     } else {
 //     	hasErrors = false;
-//       alert("Missing Fields");
+//       alert("submitted successfully");
 //     }
 //   }
 // }
+let errmsg = document.querySelector('.errormessage');
+let noerrmsg = document.querySelector('.successmessage');
+let formFields = document.querySelectorAll('.formgroup');
+for (let i=0; i<formFields.length; i++) {
     if (hasErrors) {
-      alert("Form submitted successfully");
-      resetInputFields()
+      break
     } else {
-      alert("Missing Fields");
+      resetInputFields()
     }
+    }
+  }
+
+  const checker = function (e) {
+    const target = e.target;
+    let errmsg = document.querySelector('.errormessage00');
+    let noerrmsg = document.querySelector('.successmessage');
+    checkAll();
+   if (hasErrors === true) {
+     target.parentNode.parentNode.classList.add('error');
+     errmsg[0].style.display = 'block';
+   } else {
+     target.parentNode.parentNode.classList.remove('error');
+     errmsg[1].style.display = 'none';
+   }
   }
