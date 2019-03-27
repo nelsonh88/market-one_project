@@ -197,9 +197,16 @@ label {
   margin-bottom: 0.7em;
 }
 
-form p, label {
+form p, label, {
   margin: 0;
   font-size: 11px;
+}
+
+.successmessage {
+  display: none;
+  color: green;
+  margin-top: 0.25em;
+  margin-bottom: 0.7em;
 }
 
 /* form p::after, label::after {
