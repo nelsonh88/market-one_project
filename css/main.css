@@ -197,7 +197,11 @@ label {
   margin-bottom: 0.7em;
 }
 
-form p, label, {
+.errormessage00, .successmessage {
+  font-size: 11px;
+}
+
+form p, label {
   margin: 0;
   font-size: 11px;
 }

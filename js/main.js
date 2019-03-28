@@ -85,15 +85,7 @@ const checkAll = function() {
       errmsg.style.display = 'block';
       break
     }
-    // console.log('client', selects[i].value);
-    // if (hasErrors) {
-    //   errmsg.style.display = 'block';
-    //   break
-    // } else {
-    //   resetInputFields()
-    //   errmsg.style.display = 'none';
-    //   noerrmsg.style.display = 'block';
-    // }
+
   }
   if (!hasErrors) {
     resetInputFields();
@@ -101,7 +93,7 @@ const checkAll = function() {
     noerrmsg.style.display = 'block';
     setTimeout(() => {
       noerrmsg.style.display = 'none';
-    }, 3000)
+    }, 4000)
   }
 
 }
