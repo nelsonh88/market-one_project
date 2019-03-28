@@ -177,12 +177,47 @@ body {
   margin: auto auto auto 10px;
 }
 
+label {
+  color: #777;
+  display: block;
+}
+
+.error label {
+  color: red;
+}
+
+.error input[type=text] {
+  border: 1px solid red;
+}
+
+.errormessage, .errormessage00 {
+  display: none;
+  color: red;
+  margin-top: 0.25em;
+  margin-bottom: 0.7em;
+}
+
+.errormessage00, .successmessage {
+  font-size: 11px;
+}
+
 form p, label {
   margin: 0;
   font-size: 11px;
 }
 
-form p::after, label::after {
+.successmessage {
+  display: none;
+  color: green;
+  margin-top: 0.25em;
+  margin-bottom: 0.7em;
+}
+
+/* form p::after, label::after {
+  content: "*"
+} */
+
+label::after {
   content: "*"
 }
 
